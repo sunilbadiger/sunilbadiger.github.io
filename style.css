@@ -329,10 +329,12 @@ ul { list-style: none; }
   align-items: center;
   gap: 12px;
   font-size: 0.92rem;
+  min-width: 0;
   transition: border-color .2s, transform .2s;
 }
 .cert-card:hover { border-color: var(--accent); transform: translateY(-2px); }
-.cert-icon { font-size: 1.3rem; }
+.cert-icon { font-size: 1.3rem; flex-shrink: 0; }
+.cert-card span:last-child { min-width: 0; overflow-wrap: anywhere; }
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -358,10 +360,15 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   gap: 14px;
+  min-width: 0;
   transition: border-color .2s, transform .2s;
 }
 .contact-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-.contact-icon { font-size: 1.4rem; }
+.contact-icon { font-size: 1.4rem; flex-shrink: 0; }
+.contact-card span:last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 
 /* Footer */
 footer {
