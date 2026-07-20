@@ -8,11 +8,11 @@ navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => na
 
 // Typed role text
 const roles = [
+  'Application Security Engineer',
+  'Product Security Engineer',
   'Penetration Tester',
-  'Vulnerability Assessor',
   'Cloud Security Reviewer',
-  'Bug Bounty Hunter',
-  'Red Teamer'
+  'Bug Bounty Hunter'
 ];
 const typedEl = document.getElementById('typed');
 let roleIndex = 0, charIndex = 0, deleting = false;

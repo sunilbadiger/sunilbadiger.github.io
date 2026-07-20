@@ -163,6 +163,17 @@ ul { list-style: none; }
   color: var(--text);
 }
 .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+.hero-alt-cv {
+  text-align: center;
+  margin: -24px 0 32px;
+  font-size: 0.85rem;
+}
+.hero-alt-cv a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.hero-alt-cv a:hover { color: var(--accent); }
 .hero-meta {
   display: flex;
   justify-content: center;
@@ -311,6 +322,46 @@ ul { list-style: none; }
   color: var(--muted);
   font-size: 0.92rem;
   margin-bottom: 6px;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+.project-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.project-head h3 { font-size: 1.05rem; color: var(--text); }
+.project-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-2);
+  border: 1px solid rgba(0,184,255,0.3);
+  background: rgba(0,184,255,0.08);
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.project-card ul { padding-left: 18px; }
+.project-card li {
+  list-style: disc;
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin-bottom: 8px;
+  line-height: 1.55;
 }
 
 /* Certifications */

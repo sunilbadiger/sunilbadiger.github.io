@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunil Badiger | Cybersecurity Analyst</title>
-<meta name="description" content="Sunil Badiger — Cybersecurity Analyst specializing in Penetration Testing, Vulnerability Assessment, Cloud Security & Bug Bounty.">
+<title>Sunil Badiger | Application Security Engineer</title>
+<meta name="description" content="Sunil Badiger — Application Security Engineer specializing in Product Security, VAPT, Secure Code Review (SAST/DAST/SCA), Cloud Security & AI-Augmented Security Automation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -21,8 +21,9 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#certifications">Certs</a></li>
-      <li><a href="assets/Sunil_Badiger_CV.pdf" download>Download CV</a></li>
+      <li><a href="assets/Sunil_Badiger_AppSec_Resume.pdf" download>Resume</a></li>
       <li><a href="#contact" class="btn-nav">Contact</a></li>
     </ul>
   </div>
@@ -33,16 +34,17 @@
     <p class="eyebrow">&gt; whoami --title</p>
     <h1>SUNIL BADIGER</h1>
     <p class="role"><span class="typed" id="typed"></span><span class="cursor">_</span></p>
-    <p class="hero-desc">Experienced Cybersecurity Analyst with 3+ years of hands-on expertise in penetration testing,
-      vulnerability assessment, and security framework implementation across Government, IT &amp; ITES, FinTech, and
-      e-commerce sectors.</p>
+    <p class="hero-desc">Application Security Engineer with 3+ years of hands-on expertise in VAPT, secure code review
+      (SAST/DAST/SCA), cloud security, and AI-augmented security automation — driving secure software delivery across
+      Government, IT &amp; ITES, FinTech, and e-commerce sectors.</p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Get in touch</a>
-      <a href="assets/Sunil_Badiger_CV.pdf" download class="btn btn-outline">⬇ Download CV</a>
+      <a href="assets/Sunil_Badiger_AppSec_Resume.pdf" download class="btn btn-outline">⬇ Download Resume</a>
     </div>
+    <p class="hero-alt-cv"><a href="assets/Sunil_Badiger_CV.pdf" download>Prefer the detailed CV? Download it here.</a></p>
     <div class="hero-meta">
       <span>📍 Bengaluru, India</span>
-      <span>🛡️ 3+ Years in AppSec / VAPT</span>
+      <span>🛡️ 3+ Years in Product / Application Security</span>
       <span>🐛 Bug Bounty Hunter</span>
     </div>
   </div>
@@ -57,7 +59,7 @@
         <li><strong>Client Handling</strong> — Managing AppSec processes for clients, ensuring compliance and risk mitigation; primary point of contact for queries, issues, and escalations.</li>
         <li><strong>Cybersecurity Expertise</strong> — Extensive experience performing security assessments, penetration testing, vulnerability analysis, and audits for Web, Mobile, API, Thick Client, and Network environments.</li>
         <li><strong>Penetration Testing</strong> — Skilled in identifying and resolving vulnerabilities across various platforms, strengthening system defenses.</li>
-        <li><strong>AI Security &amp; Pentesting Automation</strong> — Developed AI-driven security agents to assist with pentesting tasks, vulnerability discovery, and attack simulations.</li>
+        <li><strong>AI Security &amp; Pentesting Automation</strong> — Building AI-augmented security tooling, including a Claude Code-driven pentest automation workflow and a local-LLM (Ollama) source code scanner.</li>
         <li><strong>Pentesting Tool Automation</strong> — Built automation tools to streamline recon, vulnerability scanning, and exploitation workflows.</li>
         <li><strong>Device Binding</strong> — Performed device binding verification in compliance with RBI and NPCI guidelines.</li>
         <li><strong>Cloud Review</strong> — Managed cloud configuration reviews, enhancing security for enterprise cloud environments.</li>
@@ -254,8 +256,34 @@
     </ol>
   </section>
 
-  <section id="certifications" class="section alt">
-    <h2 class="section-title"><span class="tag">04</span> Certifications &amp; Education</h2>
+  <section id="projects" class="section alt">
+    <h2 class="section-title"><span class="tag">04</span> Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-head">
+          <h3>AI-Assisted Pentest Automation — Claude Code</h3>
+          <span class="project-tag">Personal R&amp;D, Ongoing</span>
+        </div>
+        <ul>
+          <li>Leveraging Claude Code (AI coding agent) to automate reconnaissance, vulnerability triage, and report drafting during penetration testing engagements.</li>
+          <li>Chaining outputs from Nmap, Burp Suite, and Nessus into AI-assisted workflows for faster correlation and prioritization of findings.</li>
+        </ul>
+      </div>
+      <div class="project-card">
+        <div class="project-head">
+          <h3>Local LLM-Based Source Code Scanner — Ollama</h3>
+          <span class="project-tag">Personal R&amp;D, Ongoing</span>
+        </div>
+        <ul>
+          <li>Building a self-hosted static-analysis assistant using a local LLM (via Ollama) to flag injection, authentication, and business-logic vulnerabilities during secure code reviews.</li>
+          <li>Designed to run fully offline, preserving client code confidentiality while extending SAST coverage beyond conventional rule-based tools.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="section">
+    <h2 class="section-title"><span class="tag">05</span> Certifications &amp; Education</h2>
     <div class="cert-grid">
       <div class="cert-card"><span class="cert-icon">🎓</span><span>Certified Ethical Hacker (C|EH)</span></div>
       <div class="cert-card"><span class="cert-icon">🎓</span><span>Texial Information Security Auditor</span></div>
@@ -277,7 +305,7 @@
   </section>
 
   <section id="contact" class="section contact-section">
-    <h2 class="section-title"><span class="tag">05</span> Get In Touch</h2>
+    <h2 class="section-title"><span class="tag">06</span> Get In Touch</h2>
     <p class="contact-lead">Open to discussing penetration testing engagements, security assessments, and collaboration opportunities.</p>
     <div class="contact-grid">
       <a class="contact-card" href="mailto:sunil.badiger56@gmail.com">
